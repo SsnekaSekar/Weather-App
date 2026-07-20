@@ -23,6 +23,9 @@ function Weather() {
             setWeather(success.data.weather[0].main)
         }).catch(function () {
             setError("City not found")
+            setWeather("");
+            setTemp("");
+            setDesc("");
         })
     }
 
